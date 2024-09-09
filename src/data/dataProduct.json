@@ -1,0 +1,70 @@
+[
+  {
+    "id": "532",
+    "name": "Reflex Plus Adult Cat Food Salmon",
+    "product_type": "Dog Food",
+    "size": "385gm",
+    "price": "140,000 VND",
+    "promotion": "Free Toy & Free Shaker",
+    "urlImage": "../../../assets/images/products/532.png"
+  },
+  {
+    "id": "274",
+    "name": "Reflex Plus Adult Cat Food Salmon",
+    "product_type": "Cat Food",
+    "size": "1.5kg",
+    "price": "165,000 VND",
+    "promotion": "Free Toy & Free Shaker",
+    "urlImage": "../../../assets/images/products/274.png"
+  },
+  {
+    "id": "891",
+    "name": "Cat scratching ball toy kitten sisal rope ball",
+    "product_type": "Toy",
+    "price": "1,100,000 VND",
+    "promotion": "Free Cat Food",
+    "urlImage": "../../../assets/images/products/891.png"
+  },
+  {
+    "id": "452",
+    "name": "Cute Pet Cat Warm Nest",
+    "product_type": "Toy",
+    "price": "410,000 VND",
+    "promotion": "Free Cat Food",
+    "urlImage": "../../../assets/images/products/452.png"
+  },
+  {
+    "id": "317",
+    "name": "NaturVet Dogs – Omega-Gold Plus Salmon Oil",
+    "product_type": "Dog Food",
+    "size": "385gm",
+    "price": "350,000 VND",
+    "promotion": "Free Toy & Free Shaker",
+    "urlImage": "../../../assets/images/products/317.png"
+  },
+  {
+    "id": "619",
+    "name": "Costumes Fashion Pet Cloth Cowboy Rider",
+    "product_type": "Costume",
+    "size": "1.5kg",
+    "price": "500,000 VND",
+    "promotion": "Free Toy & Free Shaker",
+    "urlImage": "../../../assets/images/products/619.png"
+  },
+  {
+    "id": "783",
+    "name": "Costumes Chicken Drumstick Headband",
+    "product_type": "Costume",
+    "price": "400,000 VND",
+    "promotion": "Free Cat Food",
+    "urlImage": "../../../assets/images/products/783.png"
+  },
+  {
+    "id": "925",
+    "name": "Plush Pet Toy",
+    "product_type": "Toy",
+    "price": "250,000 VND",
+    "promotion": "Free Food & Shaker",
+    "urlImage": "../../../assets/images/products/925.png"
+  }
+]

@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+
+@font-face {
+  font-family: 'SVN-Gilroy';
+  src: url('../assets/fonts/svn-gilroy/SVN-Gilroy.woff2') format('woff2'), url('../assets/fonts/svn-gilroy/SVN-Gilroy.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@tailwind utilities;
+
+@layer components {
+  .all-\[unset\] {
+    all: unset;
+  }
+}
