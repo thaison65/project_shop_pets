@@ -1,21 +1,33 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useRef } from 'react';
 
 const useScreenSize = () => {
   const [screenSize, setScreenSize] = useState({
-    width: window.innerWidth,
+    width: typeof document !== 'undefined' ? document.documentElement.clientWidth : 0,
+    height: typeof document !== 'undefined' ? document.documentElement.clientHeight : 0,
   });
 
+  const observerRef = useRef<ResizeObserver | null>(null);
+
   useEffect(() => {
-    const handleResize = () => {
+    if (typeof document === 'undefined') return;
+
+    const updateSize = () => {
       setScreenSize({
-        width: window.innerWidth,
+        width: document.documentElement.clientWidth,
+        height: document.documentElement.clientHeight,
       });
     };
 
-    window.addEventListener('resize', handleResize);
+    observerRef.current = new ResizeObserver(updateSize);
+    observerRef.current.observe(document.documentElement);
+
+    // Initial call to set the size
+    updateSize();
 
     return () => {
-      window.removeEventListener('resize', handleResize);
+      if (observerRef.current) {
+        observerRef.current.disconnect();
+      }
     };
   }, []);
 

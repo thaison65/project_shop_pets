@@ -8,10 +8,11 @@ interface ButtonProps {
   disabled?: boolean;
   icon?: string;
   rounded?: string;
+  width?: string;
 }
 
 const Button: React.FC<ButtonProps> = memo(
-  ({ children, onClick, variant = 'primary', size = 'medium', disabled = false, icon, rounded = 'rounded-full' }) => {
+  ({ children, onClick, variant = 'primary', size = 'medium', disabled = false, icon, rounded = 'rounded-full', width }) => {
     const baseClasses = `font-semibold ${rounded} active:outline-none active:ring-2 active:ring-offset-2`;
 
     const variantClasses = {
@@ -39,6 +40,7 @@ const Button: React.FC<ButtonProps> = memo(
         ${variantClasses[variant]}
         ${sizeClasses[size]}
         ${disabled ? disabledClasses : ''}
+        ${width ? width : ''}
         flex items-center justify-center // Thêm classes này
       `}>
         {children}

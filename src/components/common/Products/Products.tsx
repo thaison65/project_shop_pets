@@ -11,7 +11,7 @@ const Products: React.FC<ProductsProps> = (props) => {
   const { data, title } = props;
 
   return (
-    <section className='grid grid-cols-4 gap-4'>
+    <section className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4'>
       {data.map((item, index) => (
         <Product key={item.id + index} {...item} title={title} />
       ))}

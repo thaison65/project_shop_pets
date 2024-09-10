@@ -1,5 +1,5 @@
 import React from 'react';
-import { arrowDownSVG, countrySVG, logoSVG, searchSVG } from '../../../assets/icons';
+import { arrowDownSVG, countrySVG, logoSVG, menuSVG, searchSVG } from '../../../assets/icons';
 import { Button } from '../../common/Button';
 
 interface HeaderLayoutProps {
@@ -26,12 +26,24 @@ const links = [
 ];
 
 const HeaderLayout: React.FC<HeaderLayoutProps> = ({ device }) => {
-  const isMobile = device <= 768;
+  const isTablet = device <= 1440;
+  const isMoblie = device <= 768;
 
   return (
     <header className='relative'>
-      {isMobile ? (
-        <nav>Mobile Navigation</nav>
+      {isTablet ? (
+        <section className='flex items-center justify-between w-full px-3 py-5'>
+          <img src={menuSVG} alt='icon-menu' loading='lazy' className='w-[32px] h-[32px]' />
+          {isMoblie ? (
+            <img src={logoSVG} alt='logo' loading='lazy' />
+          ) : (
+            <nav className='flex items-center gap-12'>
+              <img src={logoSVG} alt='logo' loading='lazy' />
+              <Button>John the community</Button>
+            </nav>
+          )}
+          <img src={searchSVG} alt='icon-search' loading='lazy' className='w-[32px] h-[32px]' />
+        </section>
       ) : (
         <section className='flex items-center justify-between w-full px-[130px] py-[28px]'>
           <nav className='flex items-center gap-12'>
