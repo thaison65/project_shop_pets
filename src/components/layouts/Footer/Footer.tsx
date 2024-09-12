@@ -59,7 +59,7 @@ const FooterLayout: React.FC<FooterLayoutProps> = () => {
       <hr className='border-primary-dark-blue mb-8' />
 
       <section className='flex flex-col lg:flex-row justify-between items-center gap-4 lg:gap-0'>
-        <p className='text-center lg:text-left'>© 2024 Gifl. All rights reserved.</p>
+        <p className='text-center lg:text-left'>© 2024 Project of DangThaiSon .</p>
         <img src={logoSVG} alt='' loading='lazy' className='order-first lg:order-none mb-4 lg:mb-0' />
         <div className='flex gap-4'>
           <p>Terms of Service</p>
